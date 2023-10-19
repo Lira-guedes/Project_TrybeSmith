@@ -9,4 +9,9 @@ async function postProductsController(req: Request, res: Response): Promise<void
   res.status(201).json(postProducts);
 }
 
-export default { postProductsController };
+async function getProductsController(req: Request, res: Response): Promise<void> {
+  const allProducts = await productsService.getProductsService();
+  res.status(200).json(allProducts);
+}
+
+export default { postProductsController, getProductsController };

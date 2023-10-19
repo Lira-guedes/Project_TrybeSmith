@@ -6,4 +6,9 @@ Promise<ProductInputtableTypes> {
   return createdProduct.dataValues;
 } 
 
-export default { postProductsService };
+async function getProductsService(): Promise<ProductInputtableTypes[]> {
+  const allProducts = await ProductModel.findAll();
+  return allProducts.map((elem) => elem.dataValues);
+}
+
+export default { postProductsService, getProductsService };
