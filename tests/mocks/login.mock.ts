@@ -8,6 +8,4 @@ const user: User = {
     password: '$2a$10$oxSr/Mp4iMgGrooCmtbIZ.mj0lZSG4efLgr60FcWfu2zIc3s3u1bu'
 }
 
-const login = { username: 'Hagar', password: 'terrível'}
-
-export default { user, login }
+export default { user }

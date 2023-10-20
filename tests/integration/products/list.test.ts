@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import chai, { expect } from 'chai';
 import chaiHttp from 'chai-http';
 import app from '../../../src/app';
-import ProductModel, { ProductSequelizeModel } from '../../../src/database/models/product.model';
+import ProductModel from '../../../src/database/models/product.model';
 import productsMock from '../../mocks/products.mock'
 chai.use(chaiHttp);
 
